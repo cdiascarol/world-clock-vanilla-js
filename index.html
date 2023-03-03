@@ -5,14 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.41/moment-timezone-with-data-1970-2030.js"></script>
 
     <title>Timezoner</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <h6>world connection starts here</h6>
+    <div class="container">
+      <div class="row">
+        <div class="col-4 align-items-center slogan">
+          <h1>World Clock</h1>
+          <h6>world connection starts here</h6>
+        </div>
+        <div class="col-4 main-timezone">
+          <img
+            src="clock-img.png"
+            alt="clock image"
+            class="clock-img"
+            width="200"
+          />
+          <p class="main-timezone-city">Montreal</p>
+          <p class="main-timezone-time">7:46 PM</p>
+          <p class="main-timezone-country">Canada</p>
+
+          <div class="main-timezone-date">
+            <p>+00:00 Monday, 02/27/23</p>
+          </div>
+        </div>
+        <div class="col-4 timezone-list">
+          <select name="" id="timezone-list-selector">
+            <option value="">Select a city</option>
+            <option value="dublin">Dublin</option>
+            <option value="curitiba">Curitiba</option>
+            <option value="barcelona">Barcelona</option>
+          </select>
+          <div class="timezeone-list-cities">
+            <div class="row">
+              <div class="col-6">
+                <h2>Dublin, IE</h2>
+                <div class="timezone-list-dif">+03:00</div>
+              </div>
+              <div class="col-6">
+                <div class="timezone-list-time">8:45 PM</div>
+                <div class="timezone-list-date">02/27/23</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <h2>Barcelona, ES</h2>
+                <div class="timezone-list-dif">+03:00</div>
+              </div>
+              <div class="col-6">
+                <div class="timezone-list-time">8:45 PM</div>
+                <div class="timezone-list-date">02/27/23</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <a
         href="https://github.com/cdiascarol/world-clock-vanilla-js"
