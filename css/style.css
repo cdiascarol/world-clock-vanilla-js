@@ -1,3 +1,124 @@
+body {
+  font-family: "Kanit", sans-serif;
+  background: #232931;
+  color: #eeeeee;
+}
+.header {
+  padding: 0 5vw;
+  margin: 2vw 0;
+  overflow: hidden;
+}
+.logo {
+  margin-bottom: 4vw;
+  margin-left: 1vw;
+}
+.logo-text {
+  margin-left: 0.6vw;
+}
+.menu {
+  float: right;
+}
+.menu a {
+  text-decoration: none;
+  color: #eeeeee;
+  padding: 0 1vw;
+  border-radius: 4px;
+}
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu a.active {
+  background-color: #5cd0a5;
+  color: white;
+}
+
+.timezone-all {
+  padding: 0 5vw;
+}
+
+h1 {
+  font-size: 3.7vw;
+  font-weight: 700;
+}
+
+.main-timezone,
+.timezone-list {
+  padding: 2vw 0;
+  background: #393e46;
+  border-radius: 20px;
+  height: 40vw;
+}
+.main-timezone {
+  margin: 0 2vw;
+}
+.main-timezone-city {
+  margin-top: 1vw;
+  font-size: 2vw;
+}
+.main-timezone-time {
+  font-size: 1.5vw;
+}
+select {
+  width: 93%;
+  margin-bottom: 2vw;
+  padding: 0.5vw;
+  border-radius: 4px;
+}
+.timezone-list-city {
+  padding: 2vw;
+  margin: 1vw;
+  border: #eeeeee solid 0.5px;
+  border-radius: 10px;
+}
+.timezone-list-city:hover {
+  border-color: #9447f1;
+  background-color: #9447f1;
+  cursor: pointer;
+}
+h2 {
+  font-size: 1.5vw;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 7vmax;
+}
+.about-title {
+  border-radius: 0px 20px 20px 0px;
+  width: 100%;
+  background: linear-gradient(
+    163deg,
+    rgb(92, 208, 165) 0%,
+    rgb(148, 71, 241) 100%
+  );
+  padding: 15vmax 5vmax;
+}
+.about-text {
+  display: block;
+  text-align: justify;
+  background-color: #393e46;
+  color: white;
+  padding: 5vmax 5vmax;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.about-text a {
+  text-decoration: none;
+  color: #eeeeee;
+  background-color: #9447f1;
+
+  padding: 0 1vw;
+  border-radius: 4px;
+}
+.about-text a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 footer {
+  margin: 7vw 0 2vw 0;
   text-align: center;
 }
