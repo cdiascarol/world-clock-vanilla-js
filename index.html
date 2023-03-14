@@ -44,12 +44,18 @@
           <h6>world connection starts here</h6>
         </div>
         <div class="col text-center main-timezone" id="montreal">
-          <img
-            src="clock-img.png"
-            alt="clock image"
-            class="clock-img"
-            width="300"
-          />
+          <div class="clock">
+            <div class="outer-clock-face">
+              <div class="marking marking-one"></div>
+              <div class="marking marking-two"></div>
+              <div class="marking marking-three"></div>
+              <div class="marking marking-four"></div>
+              <div class="inner-clock-face"></div>
+              <div class="hand hour-hand"></div>
+              <div class="hand min-hand"></div>
+              <div class="hand second-hand"></div>
+            </div>
+          </div>
           <p class="main-timezone-city">Montreal</p>
           <p class="main-timezone-time"></p>
           <p class="main-timezone-country">Canada</p>
@@ -59,13 +65,13 @@
           </div>
         </div>
         <div class="col text-center timezone-list">
-          <select name="" id="timezone-list-selector">
+          <select name="" id="city">
             <option value="">Select a city</option>
-            <option value="dublin">Dublin</option>
-            <option value="curitiba">Curitiba</option>
-            <option value="barcelona">Barcelona</option>
+            <option value="America/New_York">New York</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Asia/Dubai">Dubai</option>
           </select>
-          <div class="timezeone-list-cities">
+          <div class="timezeone-list-cities" id="cities">
             <div class="row timezone-list-city" id="dublin">
               <div class="col-6">
                 <h2>Dublin, IE</h2>
@@ -84,16 +90,6 @@
               <div class="col-6">
                 <div class="timezone-list-time"></div>
                 <div class="timezone-list-date"></div>
-              </div>
-            </div>
-            <div class="row timezone-list-city" id="curitiba">
-              <div class="col-6">
-                <h2>Curitiba, BR</h2>
-                <div class="timezone-list-dif">+03:00</div>
-              </div>
-              <div class="col-6">
-                <div class="timezone-list-time">8:45 PM</div>
-                <div class="timezone-list-date">02/27/23</div>
               </div>
             </div>
           </div>
