@@ -204,6 +204,18 @@ h2 {
   font-size: 1.5vw;
 }
 
+.back-all-cities {
+  text-decoration: none;
+  background-color: #5cd0a5;
+  color: white;
+  padding: 0 1vw;
+  border-radius: 4px;
+}
+.back-all-cities:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 .about {
   display: flex;
   align-items: center;

@@ -87,6 +87,8 @@ function updateCity(event) {
                 )}</div>
               </div>
   </div>
+  <a class="back-all-cities" href="/">All cities</a>
+
   `;
 }
 
