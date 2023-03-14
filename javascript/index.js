@@ -24,14 +24,14 @@ function updateTime() {
     );
     let barcelonaTimeOffsetElement =
       barcelonaElement.querySelector(".timezone-list-dif");
-    let barcelonaTime = moment().tz("Europe/Barcelona");
+    let barcelonaTime = moment().tz("Europe/Madrid");
 
     barcelonaDateElement.innerHTML = barcelonaTime.format("L");
     barcelonaTimeElement.innerHTML = barcelonaTime.format("hh:mm A");
     barcelonaTimeOffsetElement.innerHTML = `UTC ${barcelonaTime.format("Z")}`;
   }
 
-  // Montreal
+  // current location
   let montrealElement = document.querySelector("#montreal");
   if (montrealElement) {
     let montrealDateElement = montrealElement.querySelector(
