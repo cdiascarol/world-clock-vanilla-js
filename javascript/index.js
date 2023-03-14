@@ -1,5 +1,5 @@
 function updateTime() {
-  // Los Angeles
+  // Dublin
   let dublinElement = document.querySelector("#dublin");
   if (dublinElement) {
     let dublinDateElement = dublinElement.querySelector(".timezone-list-date");
@@ -13,7 +13,7 @@ function updateTime() {
     dublinTimeOffsetElement.innerHTML = `UTC ${dublinTime.format("Z")}`;
   }
 
-  // Paris
+  // Barcelona
   let barcelonaElement = document.querySelector("#barcelona");
   if (barcelonaElement) {
     let barcelonaDateElement = barcelonaElement.querySelector(
@@ -29,6 +29,23 @@ function updateTime() {
     barcelonaDateElement.innerHTML = barcelonaTime.format("L");
     barcelonaTimeElement.innerHTML = barcelonaTime.format("hh:mm A");
     barcelonaTimeOffsetElement.innerHTML = `UTC ${barcelonaTime.format("Z")}`;
+  }
+  //Curitiba
+  let curitibaElement = document.querySelector("#curitiba");
+  if (curitibaElement) {
+    let curitibaDateElement = curitibaElement.querySelector(
+      ".timezone-list-date"
+    );
+    let curitibaTimeElement = curitibaElement.querySelector(
+      ".timezone-list-time"
+    );
+    let curitibaTimeOffsetElement =
+      curitibaElement.querySelector(".timezone-list-dif");
+    let curitibaTime = moment().tz("Brazil/East");
+
+    curitibaDateElement.innerHTML = curitibaTime.format("L");
+    curitibaTimeElement.innerHTML = curitibaTime.format("hh:mm A");
+    curitibaTimeOffsetElement.innerHTML = `UTC ${curitibaTime.format("Z")}`;
   }
 
   // current location
